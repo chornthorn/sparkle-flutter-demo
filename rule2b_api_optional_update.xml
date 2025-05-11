@@ -5,7 +5,7 @@
     <!-- Current latest version for Android -->
     <item>
       <title>Version 3.0.0</title>
-      <description><![CDATA[
+      <description sparkle:format="html"><![CDATA[
         <h2>New optional features and improvements</h2>
         <ul>
           <li>Enhanced UI with dark mode</li>
@@ -27,7 +27,7 @@
     <!-- Current latest version for iOS -->
     <item>
       <title>Version 3.0.0</title>
-      <description><![CDATA[
+      <description sparkle:format="html"><![CDATA[
         <h2>New optional features and improvements</h2>
         <ul>
           <li>Enhanced UI with dark mode</li>
