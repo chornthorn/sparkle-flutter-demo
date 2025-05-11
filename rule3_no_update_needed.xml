@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>No Update Needed Example</title>
+    <description>
+      This appcast demonstrates Rule 3: No Update Needed
+      If app_version >= latest_version, no update dialog is shown
+    </description>
+    
+    <!-- Current latest version for Android -->
+    <item>
+      <title>Version 3.0.0</title>
+      <description>Current latest release version</description>
+      <pubDate>Fri, 15 Sept 2023 10:00:00 +0000</pubDate>
+      <enclosure 
+        url="https://example.com/downloads/myapp-3.0.0.apk" 
+        sparkle:version="3.0.0" 
+        sparkle:os="android" 
+        length="12345678" 
+        type="application/octet-stream" 
+      />
+    </item>
+    
+    <!-- Current latest version for iOS -->
+    <item>
+      <title>Version 3.0.0</title>
+      <description>Current latest release version</description>
+      <pubDate>Fri, 15 Sept 2023 10:00:00 +0000</pubDate>
+      <enclosure 
+        url="https://example.com/downloads/myapp-3.0.0.ipa" 
+        sparkle:version="3.0.0" 
+        sparkle:os="iOS" 
+        length="12345678" 
+        type="application/octet-stream" 
+      />
+      <!-- Minimum OS version requirement for iOS -->
+      <sparkle:minimumSystemVersion>17.0.0</sparkle:minimumSystemVersion>
+    </item>
+    
+    <!-- Beta version available (not relevant for production users) -->
+    <item>
+      <title>Version 3.1.0-beta</title>
+      <description>Beta test version with experimental features</description>
+      <pubDate>Mon, 25 Sept 2023 14:30:00 +0000</pubDate>
+      <enclosure 
+        url="https://example.com/downloads/myapp-3.1.0-beta.apk" 
+        sparkle:version="3.1.0-beta" 
+        sparkle:os="android" 
+        sparkle:channel="beta"
+      />
+    </item>
+    
+    <!-- 
+    RULE 3: NO UPDATE NEEDED
+    
+    Implementation Notes:
+    1. This is for app versions that are at or above the latest version (3.0.0+)
+    2. No update dialog will be shown to these users
+    3. This prevents bothering users who are already up-to-date
+    4. Beta channel users (on 3.1.0-beta) won't see update prompts for the 3.0.0 release
+    5. There's also an OS requirement: iOS 17.0+ or Android 29+
+    6. For Android, handle the OS version check in your app code
+    
+    Note: The app's minimum supported version (2.5.0) is still enforced in your app code,
+    but isn't relevant for users who are already on 3.0.0+.
+    -->
+  </channel>
+</rss> 
