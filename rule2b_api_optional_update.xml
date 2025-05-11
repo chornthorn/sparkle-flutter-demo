@@ -5,21 +5,15 @@
     <!-- Current latest version for Android -->
     <item>
       <title>Version 3.0.0</title>
-      <description sparkle:format="html"><![CDATA[
-        <h2>New optional features and improvements</h2>
-        <ul>
-          <li>Enhanced UI with dark mode</li>
-          <li>Improved performance</li>
-          <li>Added new payment options</li>
-        </ul>
-      ]]></description>
+      <description>New optional features and improvements:
+• Enhanced UI with dark mode
+• Improved performance
+• Added new payment options</description>
       <pubDate>Fri, 15 Sept 2023 10:00:00 +0000</pubDate>
       <enclosure 
         url="https://example.com/downloads/myapp-3.0.0.apk" 
         sparkle:version="3.0.0" 
         sparkle:os="android" 
-        length="12345678" 
-        type="application/octet-stream" 
       />
       <!-- No criticalUpdate tag means this is an optional update -->
     </item>
@@ -27,21 +21,15 @@
     <!-- Current latest version for iOS -->
     <item>
       <title>Version 3.0.0</title>
-      <description sparkle:format="html"><![CDATA[
-        <h2>New optional features and improvements</h2>
-        <ul>
-          <li>Enhanced UI with dark mode</li>
-          <li>Improved performance</li>
-          <li>Added new payment options</li>
-        </ul>
-      ]]></description>
+      <description>New optional features and improvements:
+• Enhanced UI with dark mode
+• Improved performance
+• Added new payment options</description>
       <pubDate>Fri, 15 Sept 2023 10:00:00 +0000</pubDate>
       <enclosure 
         url="https://example.com/downloads/myapp-3.0.0.ipa" 
         sparkle:version="3.0.0" 
         sparkle:os="iOS" 
-        length="12345678" 
-        type="application/octet-stream" 
       />
       <!-- No criticalUpdate tag means this is an optional update -->
       <!-- Minimum OS version requirement for iOS -->
