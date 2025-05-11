@@ -2,12 +2,6 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
   <channel>
     <title>API Optional Update Example</title>
-    <description>
-      This appcast demonstrates Rule 2B: API Optional Update
-      If app_version >= min_supported_version AND update_type = "optional" AND app_version < latest_version,
-      then an optional update is offered
-    </description>
-    
     <!-- Current latest version for Android -->
     <item>
       <title>Version 3.0.0</title>
