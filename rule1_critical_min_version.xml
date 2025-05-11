@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Critical Minimum Version Example</title>
+    <description>
+      This appcast demonstrates Rule 1: Critical Minimum Version
+      If app_version is less than min_supported_version, a forced update is required
+    </description>
+    
+    <!-- Latest version available for updates -->
+    <item>
+      <title>Version 3.0.0</title>
+      <description>Latest version with new features and improvements</description>
+      <pubDate>Fri, 15 Sept 2023 10:00:00 +0000</pubDate>
+      <enclosure 
+        url="https://example.com/downloads/myapp-3.0.0.apk" 
+        sparkle:version="3.0.0" 
+        sparkle:os="android" 
+        length="12345678" 
+        type="application/octet-stream" 
+      />
+      <sparkle:tags>
+        <sparkle:criticalUpdate />
+      </sparkle:tags>
+    </item>
+    
+    <!-- iOS version -->
+    <item>
+      <title>Version 3.0.0</title>
+      <description>Latest version with new features and improvements</description>
+      <pubDate>Fri, 15 Sept 2023 10:00:00 +0000</pubDate>
+      <enclosure 
+        url="https://example.com/downloads/myapp-3.0.0.ipa" 
+        sparkle:version="3.0.0" 
+        sparkle:os="iOS" 
+        length="12345678" 
+        type="application/octet-stream" 
+      />
+      <sparkle:tags>
+        <sparkle:criticalUpdate />
+      </sparkle:tags>
+      <!-- Minimum OS version requirement for iOS -->
+      <sparkle:minimumSystemVersion>17.0.0</sparkle:minimumSystemVersion>
+    </item>
+    
+    <!-- 
+    RULE 1: CRITICAL MINIMUM VERSION
+    
+    Implementation Notes:
+    1. The app's minimum supported version is 2.5.0 (this should be checked in your app code)
+    2. If app_version < 2.5.0, force update to latest (3.0.0)
+    3. This is implemented with the criticalUpdate tag
+    4. There's also an OS requirement: iOS 17.0+ or Android 29+
+    5. For Android, you should check the SDK version in your app code (29 = Android 10)
+    6. For iOS, the sparkle:minimumSystemVersion tag handles this
+    
+    This XML doesn't explicitly specify the minimum app version because the 
+    Sparkle framework doesn't have a standard tag for that. Your app logic should
+    check app versions against your backend's defined minimum (2.5.0).
+    -->
+  </channel>
+</rss> 
