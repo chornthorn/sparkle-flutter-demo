@@ -17,8 +17,6 @@
         url="https://example.com/downloads/myapp-3.0.0.apk" 
         sparkle:version="3.0.0" 
         sparkle:os="android" 
-        length="12345678" 
-        type="application/octet-stream" 
       />
       <!-- Critical update tag to force update -->
       <sparkle:tags>
@@ -35,8 +33,6 @@
         url="https://example.com/downloads/myapp-3.0.0.ipa" 
         sparkle:version="3.0.0" 
         sparkle:os="iOS" 
-        length="12345678" 
-        type="application/octet-stream" 
       />
       <!-- Critical update tag to force update -->
       <sparkle:tags>
