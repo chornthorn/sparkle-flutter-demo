@@ -5,12 +5,14 @@
     <!-- Current latest version for Android -->
     <item>
       <title>Version 3.0.0</title>
-      <description>
-        New optional features and improvements:
-        - Enhanced UI with dark mode
-        - Improved performance
-        - Added new payment options
-      </description>
+      <description><![CDATA[
+        <h2>New optional features and improvements</h2>
+        <ul>
+          <li>Enhanced UI with dark mode</li>
+          <li>Improved performance</li>
+          <li>Added new payment options</li>
+        </ul>
+      ]]></description>
       <pubDate>Fri, 15 Sept 2023 10:00:00 +0000</pubDate>
       <enclosure 
         url="https://example.com/downloads/myapp-3.0.0.apk" 
@@ -25,12 +27,14 @@
     <!-- Current latest version for iOS -->
     <item>
       <title>Version 3.0.0</title>
-      <description>
-        New optional features and improvements:
-        - Enhanced UI with dark mode
-        - Improved performance
-        - Added new payment options
-      </description>
+      <description><![CDATA[
+        <h2>New optional features and improvements</h2>
+        <ul>
+          <li>Enhanced UI with dark mode</li>
+          <li>Improved performance</li>
+          <li>Added new payment options</li>
+        </ul>
+      ]]></description>
       <pubDate>Fri, 15 Sept 2023 10:00:00 +0000</pubDate>
       <enclosure 
         url="https://example.com/downloads/myapp-3.0.0.ipa" 
